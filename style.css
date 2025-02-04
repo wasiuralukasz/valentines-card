@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kalam:wght@300;400;700&display=swap');
+
 * {
     box-sizing: border-box;
+    font-family: "Kalam", serif;
+    font-weight: 400;
 }
 
 body {
@@ -9,4 +14,66 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
+    background-color: #FFD0D0;
+}
+
+#main {
+    width: 500px;
+    height: 600px;
+    background-color: #FFEBEB;
+    padding: 60px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 100px 1px rgba(92, 92, 92, 0.25);
+    z-index: 10;
+}
+
+#main-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#main-gif {
+    width: 228px;
+    height: 228px;
+}
+
+h1{
+    text-align: center;
+    font-size: 36px;
+    margin: 30px 0 30px 0px;
+}
+
+#main-buttons-container {
+    width: auto
+    max-width: 100%;
+    max-height: 150%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+button {
+    padding: 10px;
+    font-family: 'Inter';
+    font-size: 24px;
+    color: #ffffff;
+    border: 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: ease 0.2s;
+}
+
+#yes-button{
+    background-color: #0CCA4A;
+}
+
+#no-button {
+    background-color: #DE3C4B;
+    transition: top 0.3s, left 0.3s;
 }
