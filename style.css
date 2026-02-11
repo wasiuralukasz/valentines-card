@@ -77,3 +77,31 @@ button {
     background-color: #DE3C4B;
     transition: top 0.3s, left 0.3s;
 }
+
+.cursor-heart {
+    background: url("https://cdn-icons-png.freepik.com/512/16087/16087297.png?ga=GA1.1.96252570.1770802989");
+    width: 90px;
+    height: 80px;
+    position: absolute;
+    pointer-events: none;
+    background-size: cover;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: animate 6s linear;
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        /* filter: hue-rotate(0); */
+    }
+    100% {
+        transform: translate(-50%, -5000%);
+        opacity: 1;
+        /* filter: hue-rotate(720deg); */
+    }
+
+}
